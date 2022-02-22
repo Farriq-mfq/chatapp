@@ -1,0 +1,10 @@
+body {
+  @apply overflow-x-hidden;
+}
+.showSuccess-enter {
+  opacity: 0;
+}
+.showSuccess-enter-active {
+  opacity: 1;
+  transition: opacity ease-in-out 500ms;
+}

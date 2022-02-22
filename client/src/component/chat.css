@@ -1,0 +1,108 @@
+#Message {
+  scroll-behavior: smooth;
+}
+.heightCHat {
+  height: calc(100% - 10rem);
+}
+.chat_recaive {
+  @apply flex justify-start p-2;
+}
+.chat_sender {
+  @apply flex justify-end p-2;
+}
+.showOpsi-enter {
+  opacity: 0;
+}
+.showOpsi-enter-active {
+  opacity: 1;
+  transition: opacity 200ms;
+}
+.showOpsi-exit {
+  opacity: 1;
+}
+.showOpsi-exit-active {
+  opacity: 0;
+  transition: opacity 200ms;
+}
+/* show button */
+.showButton-enter {
+  transform: rotate(0deg) !important;
+  transition: transform 200ms;
+}
+.showButton-enter-active {
+  transform: rotate(90deg) !important;
+  transition: transform 200ms;
+}
+.showButton-exit {
+  transform: rotate(90deg) !important;
+}
+.showButton-exit-active {
+  transform: rotate(0deg) !important;
+  transition: transform 200ms;
+}
+/* btn search */
+.showButtonSearch-enter {
+  opacity: 0;
+  transform: rotate(90deg) !important;
+}
+.showButtonSearch-enter-active {
+  opacity: 1;
+  transform: rotate(0deg) !important;
+  transition: opacity 200ms;
+  transition: transform 200ms;
+}
+.showButtonSearch-exit {
+  opacity: 0;
+  transform: rotate(0deg) !important;
+}
+.showButtonSearch-exit-active {
+  opacity: 1;
+  transform: rotate(90deg) !important;
+  transition: opacity 200ms;
+  transition: transform 200ms;
+}
+/* show search icon */
+.showSearchIcon-enter {
+  display: none !important;
+}
+.showSearchIcon-exit {
+  display: none !important;
+}
+/* anim chat */
+.chat_recaive-enter {
+  opacity: 0;
+  transform: translateX(30px) translateY(-10px);
+}
+.chat_recaive-enter-active {
+  opacity: 1;
+  transform: translate(0);
+  transition: transform 200ms;
+}
+.chat_recaive-exit {
+  opacity: 0;
+  transform: translateX(30px) translateY(-10px);
+}
+.chat_sender-enter {
+  opacity: 0;
+  transform: translateX(-30px) translateY(-10px);
+}
+.chat_sender-enter-active {
+  opacity: 1;
+  transform: translate(0);
+  transition: transform 200ms;
+}
+.chat_sender-exit {
+  opacity: 0;
+  transform: translateX(-30px) translateY(-10px);
+}
+
+/* mobile */
+@media only screen and (max-width: 768px) {
+  .CHAT__MOBILE {
+    transition: transform ease-in-out 300ms;
+    @apply -translate-x-full;
+  }
+  .CHAT__ {
+    transition: transform ease-in-out 300ms;
+  }
+}
