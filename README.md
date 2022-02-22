@@ -29,7 +29,9 @@ git clone https://github.com/Farriq-mfq/chatapp
 
 * For backend <b>npm start</b>
 
-
+## Preview
+![image](https://raw.githubusercontent.com/Farriq-mfq/chatapp/master/ss.png)
+![image](https://raw.githubusercontent.com/Farriq-mfq/chatapp/master/ss2.png)
 ## Author 
 
 Farriqmfq 👋 
